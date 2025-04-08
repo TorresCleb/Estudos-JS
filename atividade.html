@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo</title>
+
+    <script>
+    //caso declare argumentos dentro da função não precisa passar também fora dela como fiz errado function calculo (num1,num2,operacao){}
+    function calculo(){
+    
+    var operacao = prompt('Escolha entre "subtracao ou soma"').toLocaleLowerCase();//evitar erros do usuário sobre maiuscula e minuscula
+    var num1 = parseInt(prompt('digite um número'))
+    var num2 = parseInt(prompt('digite outro número'))
+
+    var resultado; //resultado sem nenhum valor pois ainda vai ser atribuido
+
+        if (operacao === 'soma') {
+            resultado = num1 + num2;
+        }
+        else if (operacao === 'subtracao') {
+            resultado = num1 - num2;
+        } else{
+            resultado = 'Operação inválida';
+        }
+        return resultado;
+    }
+    
+    document.write("Resultado é: " + calculo())
+   
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
