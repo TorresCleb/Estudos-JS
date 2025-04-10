@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos mouse</title>
+
+
+    <script>
+        //MOUSE - 5 principais (onclick - ondblclick - onmouseup - onmouseover - onmouseout)
+
+        function acao(){
+            alert('Elemento foi clicado')
+        }
+        function acao2(){
+            alert('O cursor do mouse deixou a região do elemento')
+        }
+    </script>
+
+</head>
+    <body>
+        <div onclick="acao()" onmouseout="acao2()" style="background: #ad6060; height: 150px; width: 150px;"></div>
+    </body>
+</html>
